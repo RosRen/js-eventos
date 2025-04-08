@@ -18,6 +18,8 @@ header{
 main, body{
     background-color:rgb(225, 253, 244);
 }
+
+
 .enlaces{
     display: flex;
     align-items:center;
@@ -25,6 +27,18 @@ main, body{
     flex-direction:row;
     padding: 35px;
 }
+
+a {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
 h2{
     text-align: center;
 }
@@ -36,8 +50,7 @@ h2{
     flex-direction: column;
     justify-content:flex-start;      
     align-items: flex-start;      
-    margin: 0 auto; 
-    padding-top: 10px;              
+    margin: 0 auto;               
     padding-left: 20px;           
     border-radius: 8px;           
 }
