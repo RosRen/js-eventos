@@ -15,8 +15,8 @@ function agregarAlumnos(){
     const nombre = prompt("Nombre: ");
     const grupo = prompt("Grupo");
     const matricula = prompt("Matricula: ");
-    if (matricula && nombre && grupo === ""){
-        alumnos.push({nombre, grupo, materia});
+    if (nombre && grupo && matricula){
+        alumnos.push({nombre, grupo, matricula});
         alert("Alumno Registrado");
     } 
     
@@ -46,7 +46,7 @@ function mostrarAlumnos(){
     } else{
         alumnos.forEach(alumno =>{
             const p = document.createElement('p');
-        p.textContent= `Nombre: ${alumnos.nombre}, Grupo:${alumnos.grupo}, Matricula:${alumnos.matricula}`;
+        p.textContent= `Nombre: ${alumno.nombre}, Grupo:${alumno.grupo}, Matricula:${alumno.matricula}`;
             contenedor.appendChild(p);
         })
     }
